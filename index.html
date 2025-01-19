@@ -3,203 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modernizing Our Volunteer App</title>
-    <link rel="stylesheet" href="styles.css">
-     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Bench Crew App Proposal</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="presentation">
-        <div class="slide active" id="slide-1">
-            <h1>Modernizing Our Volunteer App: A Strategic Transition</h1>
-            <h2>Empowering Our Community Through Innovation</h2>
-              <div class="big-text-container">
-                   <span class="big-text">OWNERSHIP</span>
-              </div>
-            <p>January 17, 2025</p>
-        </div>
 
-        <div class="slide" id="slide-2">
-            <h1>Why We're Taking Control: Accountabilty and Innovation</h1>
-            <div class="big-text-container">
-                <span class="big-text">WHY?</span>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <!-- Replace with your actual logo image -->
+                <img src="your-logo.png" alt="Bench Crew App Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#bench-crew-app">The Bench Crew App</a></li>
+                    <li><a href="#expanded-capabilities">Expanded Capabilities</a></li>
+                    <li><a href="#benefits">Benefits</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Empowering Community Action: The Bench Crew App - Now Smarter and More Connected</h1>
+                <p class="hero-subtitle">A cutting-edge platform for impactful community engagement, data-driven insights, and enhanced volunteer safety.</p>
+                <a href="#bench-crew-app" class="button primary">Explore the Enhanced App</a>
             </div>
-            <ul>
-                 <li><b>Accountability:</b> Taking responsibility for user data and security.</li>
-                <li><b>Flexibility:</b> Customizing our systems to support our unique mission.</li>
-                 <li><b>Long-Term Value:</b> Reducing costs and increasing sustainability through ownership.</li>
-                <li><b>Innovation:</b> Unlocking our potential to grow and change without constraint.</li>
-            </ul>
-        </div>
+        </section>
 
-        <div class="slide" id="slide-3">
-            <h1>Oracle Cloud Infrastructure: Our Foundation for Growth</h1>
-           <div class="big-text-container">
-              <span class="big-text">OCI</span>
-           </div>
-           <ul>
-                <li><b>Strategic Foundation:</b> OCI as the cornerstone of our infrastructure transformation.</li>
-                <li><b>Scalability and Performance:</b> Powering seamless user experiences.</li>
-                <li><b>Customization:</b> Tailoring the system to our mission-specific requirements.</li>
-             </ul>
-        </div>
+        <section id="bench-crew-app" class="content-section">
+            <div class="container">
+                <h2>The Bench Crew App: From Simple Tracking to Intelligent Insights</h2>
+                <p class="section-intro">Originally built with <strong>Firebase Firestore</strong> for robust data storage and <strong>React Native</strong> for cross-platform mobile accessibility, the Bench Crew app has been instrumental in tracking trash cleanups and volunteer hours.</p>
 
-        <div class="slide" id="slide-4">
-            <h1>Architecting for Impact: A High-Level View</h1>
-             <div class="big-text-container">
-              <span class="big-text">SYSTEM</span>
-          </div>
-            <p>A robust infrastructure: React Native App, Backend API, MongoDB, Real-time Communication.</p>
-        </div>
-
-        <div class="slide" id="slide-5">
-            <h1>Virtual Cloud Network: Securing Our Digital Space</h1>
-            <div class="big-text-container">
-                <span class="big-text">VCN</span>
-            </div>
-            <p>Our private, secure, and adaptable data center in the cloud.</p>
-             <ul>
-                <li><b>Isolated Network:</b> Ensuring resources are separated.</li>
-                 <li><b>Traffic Control:</b> Managing data flow with precision.</li>
-                 <li><b>Secure Foundation:</b> Basis for safe and private communication.</li>
-            </ul>
-        </div>
-
-           <div class="slide" id="slide-6">
-            <h1>Subnets and Security: Precision and Protection</h1>
-            <div class="big-text-container">
-                  <span class="big-text">SUBNETS</span>
-               </div>
-               <ul>
-                  <li><b>Resource Segregation:</b> Separate resources for enhanced security.</li>
-                 <li><b>Fine-Grained Control:</b> Security Rules and NSGs manage traffic precisely.</li>
-                  <li><b>Principle of Least Privilege:</b> Restricting access for added protection.</li>
-            </ul>
-        </div>
-
-        <div class="slide" id="slide-7">
-            <h1>Our Key Resources: Powering the Application</h1>
-            <div class="big-text-container">
-               <span class="big-text">RESOURCES</span>
-          </div>
-              <ul>
-                   <li><b>Compute Instances:</b> Running our secure backend servers.</li>
-                  <li><b>Load Balancer:</b> Optimizing traffic and ensuring uptime.</li>
-                  <li><b>Database (MongoDB):</b> Data storage and management for a modern app.</li>
-                  <li><b>Object Storage:</b> Managing static assets effectively.</li>
-                  <li><b>Websocket Server:</b> Powering real-time data communication.</li>
-                  <li><b>NAT Gateway:</b> Allowing private resources secure internet access.</li>
-            </ul>
-
-        </div>
-
-         <div class="slide" id="slide-8">
-            <h1>Environments: Iteration and Scale</h1>
-             <div class="big-text-container">
-               <span class="big-text">ENVS</span>
-               </div>
-           <div class="env-container">
-            <div class="env-col">
-                 <h2>Development</h2>
-                   <ul>
-                      <li>Local environments with containers.</li>
-                       <li>Staging for real-world testing and feedback.</li>
-                   </ul>
+                <div class="app-features">
+                    <div class="feature-item">
+                        <i class="icon tracking"></i> <!-- Replace with an actual icon -->
+                        <h3>Effortless Cleanup Tracking</h3>
+                        <p>Users can easily log cleanup sessions by pinpointing their location, documenting the type of trash collected (with optional photos), and recording their valuable volunteer hours. This data has driven <span class="highlight">[Quantifiable result from Keep Keith County Beautiful, e.g., 'over 1000']</span> cleanup events and documented <span class="highlight">[Quantifiable result, e.g., 'tens of thousands']</span> of volunteer hours.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="icon volunteer"></i> <!-- Replace with an actual icon -->
+                        <h3>Volunteer Hour Logging</h3>
+                        <p>Seamlessly record and contribute your valuable time, helping us understand the immense impact of our community's dedication.</p>
+                    </div>
                 </div>
-               <div class="env-col">
-                    <h2>Production</h2>
+
+                <div class="app-screenshots">
+                    <!-- Add image carousels or individual images of the original app interface -->
+                    <img src="placeholder-app-screenshot1.png" alt="App Screenshot 1">
+                    <img src="placeholder-app-screenshot2.png" alt="App Screenshot 2">
+                </div>
+
+                <p class="section-transition">Now, we're taking the Bench Crew app to the next level with significant technological advancements...</p>
+            </div>
+        </section>
+
+        <section id="expanded-capabilities" class="content-section bg-light">
+            <div class="container">
+                <h2 class="text-primary">Smarter, Safer, and More Connected: The Future of Community Cleanup</h2>
+
+                <div class="tech-stack">
+                    <h3><i class="icon database"></i> Migrating to MongoDB: Scalable and Flexible Data Management</h3>
+                    <p>We are transitioning our backend database from Firebase Firestore to <strong>MongoDB</strong>, a leading NoSQL database known for its scalability and flexibility. This migration will allow us to handle a larger volume of data, including rich media and real-time interactions. MongoDB's document-oriented structure is ideal for the diverse data points we capture.</p>
+                </div>
+
+                <div class="realtime-features">
+                    <h3><i class="icon chat"></i> Real-Time Interactions with Redis Pub/Sub and Responsive Chat</h3>
+                    <p>To foster a stronger sense of community and provide immediate support, we are integrating <strong>Redis</strong> for its powerful publish/subscribe (pub/sub) capabilities and a <strong>responsive chat feature</strong> directly into the app.</p>
+                    <div class="feature-details">
+                        <div>
+                            <h4>Redis Pub/Sub</h4>
+                            <p>Enables real-time notifications and updates, such as alerts about nearby cleanup events, team activity, or important announcements. Imagine receiving a notification when other volunteers are cleaning up nearby!</p>
+                        </div>
+                        <div>
+                            <h4>Responsive Chat</h4>
+                            <p>Allows users to connect, coordinate cleanups, share tips, and build a supportive network. This fosters collaboration and makes the cleanup experience more engaging. <img src="placeholder-chat-mockup.png" alt="Chat Mockup"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ai-features">
+                    <h3><i class="icon ai"></i> Harnessing the Power of Computer Vision and AI</h3>
+                    <p>Introducing groundbreaking AI-powered features for enhanced data analysis and volunteer safety.</p>
+                    <div class="feature-details">
+                        <div>
+                            <h4><i class="icon vision"></i> Computer Vision for Trash Analysis</h4>
+                            <p>After cleanups, volunteers upload photos of collected trash. Our AI analyzes these images to:</p>
+                            <ul>
+                                <li><strong>Identify and Tag Trash Types:</strong> Automatically categorize litter (plastic bottles, paper, cans, etc.).</li>
+                                <li><strong>Quantify Trash Volume:</strong> Estimate the amount of each type of trash.</li>
+                                <li><strong>Generate Detailed Reports:</strong> Provide comprehensive reports for stakeholders with actionable insights. <img src="placeholder-report-mockup.png" alt="Report Mockup"></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4><i class="icon safety"></i> AI-Powered Safety and Emergency Detection</h4>
+                            <p>We're committed to volunteer safety. AI analyzes user-uploaded photos for potential dangers or emergencies:</p>
+                            <ul>
+                                <li><strong>Imminent Danger Detection:</strong> Recognizes hazardous materials, injured wildlife, etc.</li>
+                                <li><strong>Emergency Situation Recognition:</strong> Identifies elements suggesting someone needs help.</li>
+                                <li><strong>Automated Alerts:</strong> Immediately notifies administrators, enabling swift communication and coordination with authorities like game and parks officials. <img src="placeholder-alert-system.png" alt="Alert System"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Optional: Include diagrams illustrating the new system architecture -->
+                <div class="system-architecture">
+                    <h3>System Architecture</h3>
+                    <img src="placeholder-architecture-diagram.png" alt="System Architecture Diagram">
+                </div>
+            </div>
+        </section>
+
+        <section id="benefits" class="content-section">
+            <div class="container">
+                <h2 class="text-primary">Unlocking New Levels of Impact and Engagement</h2>
+
+                <div class="benefits-grid">
+                    <div class="benefit">
+                        <h3>For the Redevelopment Project</h3>
                         <ul>
-                       <li>A secure and scalable infrastructure.</li>
-                        <li>Designed for stability and high traffic volumes.</li>
-                   </ul>
-               </div>
-             </div>
-
-            <p>CI/CD manages our code changes with efficiency and scale.</p>
-        </div>
-
-
-        <div class="slide" id="slide-9">
-            <h1>Real-Time Data: Enabling Interactive Experiences</h1>
-            <div class="big-text-container">
-               <span class="big-text">REAL-TIME</span>
-               </div>
-             <ul>
-                 <li><b>MongoDB:</b> Flexible, scalable data management to drive our system.</li>
-                <li><b>WebSockets:</b> For seamless and instant updates to users.</li>
-                <li><b>Location Management:</b> Real-time tracking for volunteer management.</li>
-               <li><b>Dynamic Updates:</b> Real-time info pushed directly to our users.</li>
-            </ul>
-        </div>
-
-         <div class="slide" id="slide-10">
-            <h1>Security and Reliability: Non-Negotiable</h1>
-            <div class="big-text-container">
-                  <span class="big-text">SECURITY</span>
+                            <li><strong>Enhanced Community Engagement:</strong> Integrated chat for better volunteer coordination.</li>
+                            <li><strong>Rich Data Insights:</strong> Computer vision provides detailed trash analysis.</li>
+                            <li><strong>Improved Safety:</strong> AI-powered emergency detection for volunteer well-being.</li>
+                            <li><strong>Data-Driven Reporting:</strong> Comprehensive reports showcasing environmental impact.</li>
+                            <li><strong>Attract Environmentally Conscious Residents:</strong> Demonstrate a commitment to sustainability.</li>
+                        </ul>
+                    </div>
+                    <div class="benefit">
+                        <h3>For Other Nonprofits</h3>
+                        <ul>
+                            <li><strong>Comprehensive and Scalable Platform:</strong> Built on a modern tech stack (MongoDB, Redis).</li>
+                            <li><strong>Actionable Data:</strong> Advanced computer vision for detailed litter analysis.</li>
+                            <li><strong>Enhanced Volunteer Communication:</strong> Integrated responsive chat feature.</li>
+                            <li><strong>White Labeling and Brand Control:</strong> Customize the app with your branding.</li>
+                            <li><strong>New Revenue Streams:</strong> Resell the app to other organizations.</li>
+                            <li><strong>Simplified Compliance Reporting:</strong> Detailed data and reporting features.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-             <ul>
-                <li><b>Robust Measures:</b> Encryption, access controls, firewalls, and security patches.</li>
-                  <li><b>Data Resilience:</b> Strategic backups to ensure rapid recovery.</li>
-                <li><b>High Availability:</b> Always-on infrastructure with load balancers.</li>
-                <li><b>Proactive Monitoring:</b> Real-time insights for preventative maintenance.</li>
-             </ul>
-        </div>
+        </section>
 
-         <div class="slide" id="slide-11">
-            <h1>Technology Stack: A Foundation for Innovation</h1>
-           <div class="big-text-container">
-                <span class="big-text">TECH</span>
+        <section id="contact" class="content-section bg-light">
+            <div class="container">
+                <h2 class="text-primary">Partner with Us to Build a Cleaner Future, Together</h2>
+                <p class="section-intro">Our team combines expertise in AI, mobile development, and non-profit solutions to deliver a powerful platform for environmental action.</p>
+
+                <!-- Optional: Include team member profiles or information -->
+                <div class="team-info">
+                    <h3>Our Team</h3>
+                    <p>[Briefly introduce your team or highlight key expertise]</p>
+                </div>
+
+                <div class="cta-buttons">
+                    <h3>Ready to take the next step?</h3>
+                    <a href="#" class="button primary">Schedule a Demonstration</a>
+                    <a href="#" class="button">Learn More About Our SaaS Offering</a>
+                </div>
+
+                <div class="contact-details">
+                    <h3>Contact Us</h3>
+                    <p>Email: <a href="mailto:your-email@example.com">services@phlevel.net</a></p>
+                    <p>Phone: <a href="tel:+1YourPhoneNumber">+1 3033359837</a></p>
+                    <p><a href="phlevel.net">phlevel.net</a></p>
+                </div>
             </div>
-             <ul>
-                 <li><b>React Native:</b> For a modern, cross-platform mobile experience.</li>
-                 <li><b>Node.js/Python:</b> Secure, scalable backend services.</li>
-                 <li><b>MongoDB:</b> Flexible and powerful document database.</li>
-                 <li><b>WebSockets:</b> Enabling real-time bidirectional communication.</li>
-                 <li><b>Containers:</b> (Docker) Streamlining deployments.</li>
-            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 pH Level It Solutions</p>
         </div>
-
-        <div class="slide" id="slide-12">
-            <h1>Expected Benefits: A Leap Forward</h1>
-              <div class="big-text-container">
-                 <span class="big-text">BENEFITS</span>
-             </div>
-             <ul>
-                 <li><b>Scalability:</b> Ready for rapid user growth.</li>
-                 <li><b>Control:</b> Complete ownership of our infrastructure.</li>
-                <li><b>Performance:</b> Improved responsiveness and reliability.</li>
-                <li><b>Cost-Effectiveness:</b> Maximizing resource efficiency over time.</li>
-                <li><b>Enhanced Security:</b> A highly protected system for user peace of mind.</li>
-            </ul>
-        </div>
-
-        <div class="slide" id="slide-13">
-            <h1>Next Steps: Building The Future</h1>
-           <div class="big-text-container">
-                 <span class="big-text">NEXT</span>
-              </div>
-             <ul>
-                 <li><b>Agile Development:</b> Phased backend and feature development.</li>
-                 <li><b>Rigorous Testing:</b> Continuous testing and feedback integration.</li>
-                 <li><b>Ongoing Support:</b> Continuous monitoring for smooth application performance.</li>
-                <li><b>Project Milestones:</b> Roadmap for iterative releases.</li>
-                  <li><b>Open Forum:</b> Questions and Answers</li>
-            </ul>
-        </div>
-
-        <div class="slide" id="slide-14">
-            <h1>Thank You: Building a Better Future Together</h1>
-              <div class="big-text-container">
-                   <span class="big-text">THANK YOU</span>
-             </div>
-               <p>Thank You.</p>
-        </div>
-
-      </div>
-
-      <div class="nav">
-           <button id="prevBtn">Previous</button>
-            <button id="nextBtn">Next</button>
-      </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
