@@ -12,6 +12,13 @@
     --color-neutral-light: #f8f8f8;  /* Off-White (Sand) */
     --color-neutral-medium: #eee;    /* Light Gray */
     --color-neutral-dark: #333;      /* Dark Gray (Text) */
+    --font-size-base: 16px;           /* Base font size */
+}
+
+/* --- Reset and Base Styles --- */
+body, h1, h2, h3, h4, p, ul, li, figure {
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -19,8 +26,20 @@ body {
     line-height: 1.6;
     color: var(--color-neutral-dark);
     background-color: var(--color-neutral-light);
+    font-size: var(--font-size-base); /* Apply base font size */
 }
 
+ul {
+    list-style: none; /* Remove default bullet points */
+}
+
+img {
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+    display: block; /* Remove extra space below images */
+}
+
+/* --- Container for Centering Content --- */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -42,7 +61,7 @@ header .container {
 }
 
 header .logo img {
-    height: 50px; /* Adjust logo size */
+    height: 50px; /* Adjust logo size as needed */
 }
 
 header nav ul {
@@ -73,16 +92,24 @@ header nav ul li a:hover {
     padding: 100px 0;
     /* Add a subtle shadow for depth */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden; /* Ensures gradient fits within the section */
 }
 
 .hero h1 {
-    font-size: 2.5em;
+    font-size: 2.5rem; /* Use rem for font-size */
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for better visibility on gradient */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero .hero-subtitle {
+    font-size: 1.3rem; /* Use rem for font-size */
+    margin-bottom: 40px;
+    color: var(--color-neutral-light);
 }
 
 .hero p {
-    font-size: 1.2em;
+    font-size: 1.2rem; /* Use rem for font-size */
     margin-bottom: 30px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
@@ -96,14 +123,16 @@ header nav ul li a:hover {
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s ease;
-    border: none; /* Remove default border */
-    cursor: pointer; /* Indicate it's clickable */
+    border: none;
+    cursor: pointer;
+    font-size: 1rem; /* Use rem for font-size */
+    line-height: 1; /* For consistent height of the button*/
 }
 
 .button.primary {
     background-color: white;
     color: var(--color-primary-dark);
-    border: 2px solid var(--color-primary-dark); /* Add a border to the primary button */
+    border: 2px solid var(--color-primary-dark);
 }
 
 .button:hover {
@@ -111,16 +140,116 @@ header nav ul li a:hover {
     color: var(--color-neutral-dark);
 }
 
-/* --- Content Section Styling --- */
+/* --- Section Styles --- */
 .content-section {
     padding: 80px 0;
 }
 
+.bg-light {
+    background-color: var(--color-neutral-light);
+}
+
 .content-section h2 {
-    font-size: 2em;
+    font-size: 2rem; /* Use rem for font-size */
     margin-bottom: 30px;
     text-align: center;
-    color: var(--color-primary-dark); /* Use a sunset color for headings */
+    color: var(--color-primary-dark);
+}
+
+.section-intro {
+    font-size: 1.1rem; /* Use rem for font-size */
+    color: #777;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-transition {
+    text-align: center;
+    margin-top: 40px;
+    font-style: italic;
+    color: var(--color-primary-medium);
+}
+
+/* --- App Features Section --- */
+.app-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.feature-item {
+    text-align: center;
+}
+
+.feature-item .icon {
+    display: inline-block;
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: var(--color-primary-medium);
+}
+
+.app-screenshots {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.app-screenshots img {
+    display: inline-block;
+    margin: 0 10px;
+    max-width: 45%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* --- Tech Stack, Realtime, AI Sections --- */
+.tech-stack h3, .realtime-features h3, .ai-features h3 {
+    color: var(--color-secondary-medium);
+    margin-bottom: 20px;
+    font-size: 1.5rem; /* Use rem for font-size */
+    display: flex;
+    align-items: center; /* Align icon and heading */
+    gap: 10px;  /* Add spacing between icon and text */
+}
+
+.tech-stack h3 .icon,
+.realtime-features h3 .icon,
+.ai-features h3 .icon {
+     font-size: 1.5em;
+}
+
+.feature-details {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens*/
+}
+
+.feature-details > div {
+    flex: 1;
+    min-width: 300px;
+}
+
+.feature-details h4 {
+    font-size: 1.2rem; /* Use rem for font-size */
+    margin-bottom: 15px;
+    color: var(--color-primary-medium);
+}
+
+.feature-details img {
+    max-width: 80%;
+    margin-top: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.system-architecture {
+    text-align: center;
+    margin-top: 40px;
+}
+.system-architecture img {
+    max-width: 80%;
 }
 
 /* --- Benefits Grid Styling --- */
@@ -136,11 +265,11 @@ header nav ul li a:hover {
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-top: 3px solid var(--color-primary-medium); /* Highlight with a sunset color */
+    border-top: 3px solid var(--color-primary-medium);
 }
 
 .benefit h3 {
-    font-size: 1.5em;
+    font-size: 1.5rem; /* Use rem for font-size */
     margin-bottom: 15px;
     color: var(--color-secondary-medium);
 }
@@ -160,7 +289,50 @@ header nav ul li a:hover {
     position: absolute;
     left: 0;
     top: 5px;
-    color: var(--color-primary-light); /* Use a lighter sunset color for bullet points */
+    color: var(--color-primary-light);
+}
+
+
+/* --- Call to Action Buttons --- */
+.cta-buttons {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.cta-buttons .button {
+     margin: 0 10px;
+}
+
+/* --- Contact Details --- */
+.contact-details {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.contact-details a {
+    color: var(--color-accent-dark);
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+/* --- Highlight Style --- */
+.highlight {
+    color: var(--color-accent-dark);
+    font-weight: bold;
+}
+
+/* Team Info */
+.team-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-info h3 {
+    font-size: 1.3rem; /* Use rem for font-size */
+    color: var(--color-primary-medium);
 }
 
 /* --- Footer Styling --- */
@@ -191,7 +363,14 @@ footer {
         padding: 60px 0;
     }
     .hero h1 {
-        font-size: 2em;
+        font-size: 2rem;
+    }
+    .app-screenshots img {
+       max-width: 80%;
+       margin-bottom: 15px;
+    }
+    .feature-details{
+       flex-direction: column; /* stack features vertically*/
     }
 }
 
@@ -199,11 +378,11 @@ footer {
 @media print {
     body {
         font-size: 12pt;
-        color: #000; /* Ensure black text for printing */
-        background-color: #fff; /* White background for printing */
+        color: #000;
+        background-color: #fff;
     }
     header, nav, .button {
-        display: none; /* Hide navigation and interactive elements */
+        display: none;
     }
     .container {
         width: 100%;
@@ -214,22 +393,30 @@ footer {
         padding: 20px 0;
     }
     .content-section h2 {
-        color: #000; /* Ensure headings are black in print */
+        color: #000;
     }
     .benefit {
-        border-top: 1px solid #ccc; /* Use a gray border in print */
-        box-shadow: none; /* Remove shadows in print */
+        border-top: 1px solid #ccc;
+        box-shadow: none;
     }
     .benefit h3 {
-        color: #000; /* Ensure benefit headings are black in print */
+        color: #000;
     }
     .benefit ul li:before {
-        color: #000; /* Ensure bullet points are black in print */
+        color: #000;
     }
     footer {
         background-color: #fff;
         color: #000;
-        border-top: 1px solid #ccc; /* Add a border to the footer in print */
-        padding-top: 10px; /* Add some padding for the footer in print */
+        border-top: 1px solid #ccc;
+        padding-top: 10px;
     }
+}
+
+/* --- Icon Styles (example - replace with your icon library styles) --- */
+.icon {
+    display: inline-block; /* Use flexbox or similar for alignment*/
+    font-size: 1.2em;   /* Adjust size */
+    color: var(--color-primary-medium);
+    /* Add more specific icon styles, alignment, margin, or padding here */
 }
