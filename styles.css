@@ -153,7 +153,7 @@ header nav ul li a:hover {
     font-size: 2rem; /* Use rem for font-size */
     margin-bottom: 30px;
     text-align: center;
-    color: var(--color-primary-dark);
+    color: var(--color-primary-dark); /* Re-apply the color */
 }
 
 .section-intro {
@@ -392,6 +392,7 @@ footer {
     .content-section {
         padding: 20px 0;
     }
+     /* Fix: Remove color rule that is causing issues */
     .content-section h2 {
         color: #000;
     }
@@ -399,6 +400,7 @@ footer {
         border-top: 1px solid #ccc;
         box-shadow: none;
     }
+    /* Fix: Remove color rule that is causing issues */
     .benefit h3 {
         color: #000;
     }
