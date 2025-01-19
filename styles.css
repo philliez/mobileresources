@@ -201,6 +201,7 @@ header nav ul li a:hover {
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        background-color: #eee; /* Add a fallback background color */
 }
 
 /* --- Tech Stack, Realtime, AI Sections --- */
